@@ -69,25 +69,25 @@ The LeNet architecture accepts a 32x32xC image as input, where C is the number o
 
 **Layer 6: Fully Connected (Logits).** This should have 43 outputs.
 Final model just like this: 
-| Layer         		|     Description	        					| 
+| Layer         	|     Description	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| outputs 30x30x6 	|
-| RELU					| tf.nn.relu									|
-| Convolution 3x3     	|  outputs 28x28x6 	|
-| RELU					| tf.nn.relu									|
-| Max pooling	      	| 2x2 stride,  outputs 14x14x6  				|
-| Convolution 5x5x16    | outputs 10x10x16.      						|
-| RELU					| tf.nn.relu									|
-| Max pooling	      	| 2x2 stride,  outputs 5x5x16  		     		|
-| Flatten				| 1600.        									|
-| RELU					| tf.nn.relu									|
-| Flatten				| 120.        									|
-| RELU					| tf.nn.relu									|
-| Flatten				| 84.        									|
-| RELU					| tf.nn.relu									|
-| Dropout				| 0.7											|
-| Flatten				| 43.        									|
+| Input         	| 32x32x3 RGB image   				| 
+| Convolution 3x3     	| outputs 30x30x6 				|
+| RELU			| tf.nn.relu					|
+| Convolution 3x3     	|  outputs 28x28x6 				|
+| RELU			| tf.nn.relu					|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6  		|
+| Convolution 5x5x16    | outputs 10x10x16.      			|
+| RELU			| tf.nn.relu					|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16  		    	|
+| Flatten		| 1600.        					|
+| RELU			| tf.nn.relu					|
+| Flatten		| 120.        					|
+| RELU			| tf.nn.relu					|
+| Flatten		| 84.        					|
+| RELU			| tf.nn.relu					|
+| Dropout		| 0.7						|
+| Flatten		| 43.        					|
 
 #### 3.3  Output
 Return the result of the 2nd fully connected layer.
@@ -104,13 +104,13 @@ the origin data:
 the lables: test_labels = [35,38,37,14,13]
 the predict results: [35 38 37  1 13]
 ![alt text][image3]
-| Image			        |     Prediction	        					| 
+| Image			|     Prediction	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| Ahead only      		| Ahead only   									| 
-| Keep right     		| Keep right 									|
-| Go straight or left	| Go straight or left							|
-| Stop	      	    	| Speed limit (20km/h)			 				|
-| Yield         		| Yield       					        		|
+| Ahead only      	| Ahead only   					| 
+| Keep right     	| Keep right 					|
+| Go straight or left	| Go straight or left				|
+| Stop	      	    	| Speed limit (20km/h)			 	|
+| Yield         	| Yield       					|
 the Output Top 5 Softmax Probabilities For Each Image:
 ![alt text][image4]
 
