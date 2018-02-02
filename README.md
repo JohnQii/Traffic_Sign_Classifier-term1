@@ -69,9 +69,9 @@ The LeNet architecture accepts a 32x32xC image as input, where C is the number o
 
 **Layer 6: Fully Connected (Logits).** This should have 43 outputs.
 Final model just like this: 
-| Layer         	|     Description	        		| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         	| 32x32x3 RGB image   				| 
+| Layer         	|     Description	        		|
+|:---------------------:|:---------------------------------------------:|
+| Input         	| 32x32x3 RGB image   				|
 | Convolution 3x3     	| outputs 30x30x6 				|
 | RELU			| tf.nn.relu					|
 | Convolution 3x3     	|  outputs 28x28x6 				|
@@ -104,9 +104,9 @@ the origin data:
 the lables: test_labels = [35,38,37,14,13]
 the predict results: [35 38 37  1 13]
 ![alt text][image3]
-| Image			|     Prediction	        		| 
-|:---------------------:|:---------------------------------------------:| 
-| Ahead only      	| Ahead only   					| 
+| Image			|     Prediction	        		|
+|:---------------------:|:---------------------------------------------:|
+| Ahead only      	| Ahead only   					|
 | Keep right     	| Keep right 					|
 | Go straight or left	| Go straight or left				|
 | Stop	      	    	| Speed limit (20km/h)			 	|
